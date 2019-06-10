@@ -1,0 +1,16 @@
+{% extends 'parent.html'%}
+{% block t1%}
+<h2>儿子</h2>
+<h1>scheme:{{request.scheme}}</h1>
+<h1>method:{{request.method}}</h1>
+<h1>args:{{request.args}}</h1>
+<h1>args:{{request.args.姓名}}</h1>
+<h1>form:{{request.form}}</h1>
+<h1>coolies:{{request.cookies}}</h1>
+<h1>path:{{request.path}}</h1>
+<h1>full_path:{{request.full_path}}</h1>
+{%endblock%}
+{% block t2%}
+{{super()}}
+<h2>儿子</h2>
+{%endblock%}
